@@ -56,13 +56,40 @@
 
 3. Install ERPNext app:
    ```
-   bench get-app payments
-   bench get-app hrms
-   bench --site <site-name> install-app payments
-   bench --site <site-name> install-app hrms
+   bench get-app --branch version-15 erpnext
+   bench --site <site-name> install-app erpnext
    ```
 
 4. Start the Frappe server:
    ```
    bench start
    ```
+
+
+   ## Installing Additional Modules
+
+1. Install the Payment module:
+   ```
+   bench get-app payments
+   bench --site <site-name> install-app payments
+   ```
+
+2. Install the HRMS module:
+   ```
+   bench get-app hrms
+   bench --site <site-name> install-app hrms
+   ```
+
+## Accessing and Managing Modules
+
+1. Access the Frappe/ERPNext web interface by navigating to `http://ec2-instance-ip:8000` in the web browser.
+2. Log in with the admin credentials you created.
+3. To manage user permissions:
+   - Go to "User" doctype
+   - Select a user
+   - Scroll down to "Roles" section
+   - Add or remove roles as needed
+
+## Troubleshooting
+
+- If you encounter any issues, check the Frappe log files located in `~/frappe-bench/logs/`.
