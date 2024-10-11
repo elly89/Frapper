@@ -92,4 +92,4 @@
 
 ## Troubleshooting
 
-- If you encounter any issues, check the Frappe log files located in `~/frappe-bench/logs/`.
+- If you encounter any issues, check the Frappe log files located in ` /home/frapper/frappe-bench/sites/frapper/logs`.
