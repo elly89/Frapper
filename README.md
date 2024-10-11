@@ -38,3 +38,28 @@
    bench init frappe-bench --frappe-branch version-15
    cd frappe-bench
    ```
+
+## Configuring Frappe
+
+1. Create a new site:
+   ```
+   bench new-site Frapper
+   ```
+
+2. Set the site as default:
+   ```
+   bench use Frapper
+   ```
+
+3. Install ERPNext app:
+   ```
+   bench get-app payments
+   bench get-app hrms
+   bench --site frapper install-app payments
+   bench --site frapper install-app hrms
+   ```
+
+4. Start the Frappe server:
+   ```
+   bench start
+   ```
