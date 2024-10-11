@@ -1,13 +1,16 @@
 ## Initial Server Setup
 
 1. Launch an EC2 instance with Ubuntu 22.04 LTS.
+    -  Hardware Requirements
+      -  4GB RAM
+      -  40GB Hard Disk
 2. Connect to your instance via SSH.
 3. Update the system:
    ```
    sudo apt update && sudo apt upgrade -y
    ```
 
-## Installing Frappe
+## Installing Frapper
 
 1. Install system dependencies:
    ```
@@ -39,7 +42,7 @@
    cd frappe-bench
    ```
 
-## Configuring Frappe
+## Configuring Frapper
 
 1. Create a new site:
    ```
