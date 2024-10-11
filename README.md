@@ -2,8 +2,8 @@
 
 1. Launch an EC2 instance with Ubuntu 22.04 LTS.
     -  Hardware Requirements
-      -  4GB RAM
-      -  40GB Hard Disk
+      1.  4GB RAM
+      2.  40GB Hard Disk
 2. Connect to your instance via SSH.
 3. Update the system:
    ```
@@ -46,20 +46,20 @@
 
 1. Create a new site:
    ```
-   bench new-site Frapper
+   bench new-site <site-name>
    ```
 
 2. Set the site as default:
    ```
-   bench use Frapper
+   bench use <site-name>
    ```
 
 3. Install ERPNext app:
    ```
    bench get-app payments
    bench get-app hrms
-   bench --site frapper install-app payments
-   bench --site frapper install-app hrms
+   bench --site <site-name> install-app payments
+   bench --site <site-name> install-app hrms
    ```
 
 4. Start the Frappe server:
